@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+*{
+    font-family: "Poppins", sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #252525, #56555F);
+    height: 100vh;
+    overflow: hidden;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    height: 62px;
+    background:  linear-gradient(180deg, #40C0B0, #6484fa);
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.5);
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    z-index: 5;
+}
+nav img{
+    position: absolute;
+    height: 40px;
+    border-radius: 50%;
+    top: 10px;
+    left: 5px;
+}
+.list {
+    position: absolute;
+    height: 40px;
+    border-radius: 50%;
+    top: 10px;
+    right: 5px;
+    left: auto;
+}
+nav ul{
+    display: flex;
+}
+nav ul .ico{
+    display: flex;
+    margin: 0 70px;
+    align-items: center;
+    width: 50px;
+
+}
+nav ul li{
+    list-style-type: none;
+    margin:0 10px;
+}
+
+
+nav ul li a{
+    transform: rotate(0deg);
+    transition: 0.5s;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    width: 0px;
+    overflow: hidden;
+
+}
+nav ul .ico:hover  a{
+    transition: .5s;
+    width: 70px;
+}
+nav ul .ico i{
+    transform: rotate(0deg);
+    transition: 0.5s;
+    color: white;
+    font-size: 40px;
+}
+nav ul .ico:hover i{
+    color: deeppink;
+    font-size: 25px;
+    transition: .5s;
+    transform: rotate(360deg);
+}
+aside .srch {
+    vertical-align: ;
+    background-color: darkblue;
+    display: flex;
+    top: 0px;
+    width: 100%;
+    height: 45px;
+    font-size: 30px;
+    color: white;
+    position: relative;
+}
+aside i {
+    transform: translateY(10px);
+}
+aside .srch input{
+    transform: translateX(10px) translateY(10px);
+    outline: none;
+    border: none;
+    width: 77%;
+    height: 30px;
+    border-radius: 12px;
+    margin-right: 18px ;
+}
+
+/* .in{
+    width: 100%;
+    display: flex;
+}
+.set{
+    position: absolute;
+    margin-top: 1px;
+    left: 2px; 
+    transform: translate(0%);
+}
+.por{
+    position: absolute;
+    margin-top: 1px;
+    right: 5px; 
+    transform: translate(0%);
+}
+.content{
+    position: absolute;
+    margin-top: 1px;
+    left: 50%; 
+    transform: translate(-50%);
+}
+.content a{
+    position: relative;
+    text-decoration: none;
+    padding: 0 30px;
+}
+.content a::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0px;
+    background-color: rgb(205, 216, 216);
+    transition: .5s;
+}
+.content a::after{
+    left: 0px;
+    bottom: -1px;
+}
+.content a:hover::after{
+    width: 90%;
+}
+.content a:hover{
+    transition: .5s;
+    transform: scale(1.1);
+}
+.content a:focus{
+    transition: .5s;
+    transform: scale(.9);
+} */
+.calander_panal{
+    display: block;
+}
+section .container{
+    display: flex;
+    flex-basis: 50%;
+    flex-wrap: wrap;
+}
+.note{
+    position: absolute;
+    top: 70px;
+    background: #0a0043;
+    width: 500px;
+    height: 250px;
+    margin-left: 5px;
+    border-radius: 10px;
+    box-shadow: rgb(16, 13, 13) 5px 5px 5px;
+
+}
+.note label{
+    position:absolute;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    padding-left: 5px;
+    top: 5px;
+    display: block;
+}
+.note button{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    border-radius: 20px;
+    width: 70px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 600;
+}
+/*here the simelar attributs should be taken in on class*/
+
+.note textarea{
+    position: absolute;
+    top: 50px;
+    width: 98%;
+    height: 75%;
+    resize: none;
+    border-radius: 10px;
+    right: 1px;
+    font-size: 20px;
+}
+.search{
+    position: absolute;
+    top: 400px;
+    background: #0a0043;
+    width: 500px;
+    height: 250px;
+    margin-left: 5px;
+    border-radius: 10px;
+    box-shadow: rgb(16, 13, 13) 5px 5px 5px;
+}
+/*and here*/
+.search textarea{
+    position: absolute;
+    top: 50px;
+    width: 98%;
+    height: 75%;
+    resize: none;
+    border-radius: 10px;
+    right: 1px;
+    font-size: 20px;
+}
+.search label{
+    position:absolute;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    padding-left: 5px;
+    top: 5px;
+    display: block;
+}
+.search input{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.tody-sch{
+    position: absolute;
+    left: 700px;
+    top: 70px;
+    background: #0a0043;
+    border-radius: 10px;
+    box-shadow: rgb(16, 13, 13) 5px 5px 5px;
+
+}
+.tody-sch tr th{
+    background: white;
+    width: 70px;
+    height: 30px;
+    border-radius: 8px;
+}
+.tody-sch tr td{
+    background: white;
+    width: 100px;
+    height: 60px;
+    border-radius: 8px;
+}
+.tody-sch caption{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+}
+iframe{
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+.main{
+position: fixed;
+left: 0;
+right: 250px;
+top: 62px;
+bottom: auto;
+width: auto;
+height: 100%;
+z-index: 3;
+}
+aside{
+position: fixed;
+top: 62px;
+bottom: auto;
+right: 0;
+width: 250px;
+background-color: rgb(103, 101, 101);
+height: 100%;
+z-index: 4;
+}
+.calander_panal time {
+  color: white;
+  text-transform: capitalize;
+  font-weight: 800;
+  font-size: 25px;
+}
+.calander_panal time em {
+  display: block;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+}
+.calander_panal header {
+  background-color: darkblue;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+    height: 120px;
+}
+.calander_panal header a {
+  display: inline-block;
+  padding: 5px 20px;
+  border-radius: 20px;
+  background-color: cornflowerblue;
+  color: white;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+.calander_panal header a:hover {
+  background-color: blueviolet;
+ font-size: 18px;
+}
+.calander_panal [role="main"]{
+  overflow: hidden;
+  background: white;
+}
+.calander_panal section ul {
+    transform: translateX(-18px);
+  list-style-type: none;
+}
+.calander_panal section li {
+  position: relative;
+  display: inline-block;
+  float: left;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  zoom: 1;
+  *display: inline;
+}
+.l-date--event {
+  cursor: pointer;
+border-radius: 20px;
+  transition: background 0.3s ease-in-out;
+}
+.l-date--event:hover {
+  background-color: aqua;
+
+}
+.m-bullet--event {
+  position: absolute;
+  top:  -7px;
+  right: 3px;
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: red;
+}
+.m-box--weeks {
+color: red;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 10px;
+}
+.m-box--date {
+  color: #252525;
+  font-size: 16px;
+}
+.l-date--passed {
+  color: #A6A5AF;
+}
